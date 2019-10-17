@@ -1,0 +1,16 @@
+{
+  "version": "0.0.01",
+  "description": "Update home-points in NBA Game",
+  "main": "./index.js",
+  "author": "infinityAlive <sonicx7boyboyboy@gmail.com>",
+  "scripts": {
+    "updateNbaGame": "npx lambda-local -l './index.js' -h 'updateNbaGame' -e 'event.json' -t 60"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "mongodb": "^3.2.7"
+  },
+  "devDependencies": {
+    "lambda-local": "^1.6.3"
+  }
+}

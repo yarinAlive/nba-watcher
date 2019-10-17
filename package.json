@@ -1,0 +1,18 @@
+{
+  "name": "nba-watcher",
+  "version": "1.0.0",
+  "description": "監聽 MongoDb nba Game collection 主隊分數的變動",
+  "main": "./app/app.js",
+  "scripts": {
+    "start": "node ./app/app.js"
+  },
+  "author": "yarinAlive <yarinliu@noodoe.com>",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "firebase-admin": "^8.5.0",
+    "mongodb": "^3.3.2"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
