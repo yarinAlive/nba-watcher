@@ -1,4 +1,4 @@
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 const config = require('./config');
 const { saveRecord } = require('./firestore/firestore-service');
 
@@ -31,6 +31,7 @@ async function nbaGamePointsOnChange() {
       [
         {
           $match: {
+            _id: ObjectId('5d7d0de95df2fd0caf6ef3ff'),
             // Only listen specific field
             'updateDescription.updatedFields.homePoints': { $exists: true },
             operationType: 'update',
